@@ -1,5 +1,6 @@
-import { SimpleGrid } from '@chakra-ui/react';
+import { Center, SimpleGrid } from '@chakra-ui/react';
 import Card from '@/components/cards';
+
 
 interface CardData {
     id: string;
@@ -13,8 +14,10 @@ interface CardsContainerProps {
 }
 
 const CardsContainer: React.FC<CardsContainerProps> = ({ cards }) => {
+    
     return (
-        <SimpleGrid columns={3} spacing={4}>
+
+        <SimpleGrid columns={{ base: 1, sm: 2, md: 3, lg: 4 }} spacing={4} >
             {cards.map(card => (
             <Card
                 key={card.id}

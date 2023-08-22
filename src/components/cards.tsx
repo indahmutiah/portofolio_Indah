@@ -12,7 +12,7 @@ import {
   CardProps,
   Button,
 } from '@chakra-ui/react'
-import { Roboto, Montserrat} from 'next/font/google'
+import { Poppins, Montserrat} from 'next/font/google'
 import { ChakraProvider } from '@chakra-ui/react'
 
 interface CardsProps extends BoxProps{
@@ -73,7 +73,7 @@ export default function Card({id, title, description, image}: CardsProps) {
             />
           </Box>
           <Stack pt={10} align={'center'}>
-            <Heading fontSize={'2xl'} fontWeight={500}>{title}</Heading>
+            <Heading fontSize={'2xl'} color={'blackAlpha.700'}>{title}</Heading>
             <Text color={'gray.500'} fontSize={'sm'} textTransform={'uppercase'}>{description}</Text>
             <Stack direction={'row'} align={'center'}>
               <Button variant={'ghost'} colorScheme='blue'>View More</Button>

@@ -1,6 +1,6 @@
 import { ChakraProvider } from '@chakra-ui/react'
 import { Box, Button, Stack} from '@chakra-ui/react'
-import { Roboto, Montserrat} from 'next/font/google'
+import { Poppins, Montserrat} from 'next/font/google'
 import Typewriter from 'typewriter-effect';
 import styles from '@/styles/Home.module.css'
 import { extendTheme, theme } from '@chakra-ui/react'
@@ -8,6 +8,10 @@ import { Global } from '@emotion/react';
 import { useRouter } from 'next/router'
 import { Link } from 'react-scroll';
 
+const poppins = Poppins({
+    subsets:['latin'],
+    weight:['200','400']
+})
 export default function LandingP(prop:any) {
     const boxStyle = {
         background: 'linear-gradient(to right, #780206, #061161)',
@@ -27,7 +31,7 @@ export default function LandingP(prop:any) {
     
     <Box style= {boxStyle}>
         <br></br>
-        <Box mt={270} />
+        <Box mt={210} />
         <Stack>
             <Typewriter
                 options={{
@@ -70,6 +74,7 @@ export default function LandingP(prop:any) {
                     _hover={{ bg: 'White' }}
                     colorScheme='facebook' 
                     variant='outline'
+                    className={poppins.className}
                     >
                         <Link activeClass='active'to='cards' spy={true} smooth={true} offset={100} duration={500}> Get Started</Link>
                         
