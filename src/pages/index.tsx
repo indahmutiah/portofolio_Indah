@@ -9,6 +9,7 @@ import {Center, Grid, GridItem} from '@chakra-ui/react'
 import { Heading } from '@chakra-ui/react';
 import { ChakraProvider } from '@chakra-ui/react'
 import { title } from 'process'
+import { color } from 'framer-motion'
 
 
 // import Image from 'next/image'
@@ -21,7 +22,13 @@ const poppins = Poppins({
 const montserrat = Montserrat({
   subsets:['latin'],
   weight:['200','300','400']
+
 })
+const strokeTextStyle = {
+  WebkitTextStroke: '1px',
+  color: 'white',
+  textShadow: '2px 2px 4px rgba(255, 255, 255, 0.5)'
+}
 const Home:NextPage = () => {
 
   const cards = [
@@ -64,7 +71,7 @@ const Home:NextPage = () => {
       <ChakraProvider>
         <LandingP></LandingP>
         <Center>
-        <Heading as={'h1'} size={'xl'} marginTop={50} marginBottom={50} id='cards'> MY TOPICS</Heading>
+        <Heading as={'h1'} size={'xl'} marginTop={50} marginBottom={50} id='cards' style={strokeTextStyle}> MY TOPICS</Heading>
         </Center>
         
         {/* <Grid templateColumns='repeat(3, 1fr)' gap={6} >

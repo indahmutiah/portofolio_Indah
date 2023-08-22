@@ -39,11 +39,11 @@ export default function LandingP(prop:any) {
                 loop: false,
                 }}
                 onInit={(typewriter) => {
-                typewriter.typeString('<center><span style="color:#ffff; font-size:200%; font-family:gill sans; "> Welcome to </span></center')
+                typewriter.typeString('<center><span style="color:#ffff; font-size:200%; font-family:gill sans; text-shadow: 2px 2px 4px rgba(255, 255, 255, 255);"> Welcome to </span></center')
                 
-                typewriter.typeString('<center><strong><span style="color:#ffff; font-size:360%; font-family:gill sans;">Indah Mutiah U.Mz&apos;s </span></strong></center>')
+                typewriter.typeString('<center><strong><span style="color:#ffff; font-size:360%; font-family:gill sans; text-shadow: 2px 2px 4px rgba(255, 255, 255, 255);">Indah Mutiah U.Mz&apos;s </span></strong></center>')
                     
-                typewriter.typeString('<center><span style="color:#ffff; font-size:200%; font-family:gill sans; "> Website </span></center')
+                typewriter.typeString('<center><span style="color:#ffff; font-size:200%; font-family:gill sans; text-shadow: 2px 2px 4px rgba(255, 255, 255, 255);"> Website </span></center')
                     .pauseFor(2500)
                     .start();
                 }}
