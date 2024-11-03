@@ -4,7 +4,7 @@ a Life Long Learner from Indonesia. I'm interest in `QA, Soft. Dev, and Data Sci
 My personal website in here [indahmutiah.com](https://indahmutiah.com)
 
 # Preview
-![preview_my_web](/img/preview_my_web.PNG)
+![preview_my_web](public/img/preview_my_web.PNG)
 
 # Keep in Touch
 **Open opportunity**, Let's collaborate and build project with me :handshake:
